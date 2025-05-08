@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="search_bar.js" defer></script>
+    <script src="hero_card.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center; margin-top: 20px;"> Galeria de Superhéroes</h1>
+    <search-bar></search-bar>
+    <div class="heroes-container" style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
+        <hero-card 
+            nombre="Bruce Wayne" 
+            alias="Batman" 
+            casa="DC Comics" 
+            aparicion="1939" 
+            descripcion="El Caballero de la Noche, conocido como un vigilante enmascarado que protege Gotham con inteligencia, habilidad y tecnología, impulsado por la tragedia de su pasado."
+            descripcion-larga="Bruce Wayne, también conocido como Batman, es un millonario filántropo que, tras presenciar el asesinato de sus padres en su infancia, juró combatir el crimen en Gotham City. Sin superpoderes, confía en su mente estratégica, su entrenamiento físico extremo y una avanzada tecnología desarrollada en secreto. Como el Caballero de la Noche, es temido por los criminales y respetado por sus aliados. Su misión es proteger la ciudad del caos, incluso si debe sacrificar su vida personal en el camino." 
+            imagen="img/Batman.webp">
+        </hero-card>
+        <hero-card
+            nombre="Dick Grayson"
+            alias="Robin"
+            casa="DC Comics"
+            aparicion="1940"
+            descripcion="El compañero leal del Caballero de la Noche, combina agilidad, valentía y un fuerte sentido de la justicia. Robin lucha por Gotham guiado por el ejemplo de Batman y su deseo de hacer el bien."
+            descripcion-larga="Robin es el nombre compartido por varios jóvenes que han sido entrenados por Batman como sus aprendices y compañeros en la lucha contra el crimen. El más conocido es Dick Grayson, un acróbata huérfano que encuentra en Batman una figura paterna. Con agilidad, astucia y un fuerte código moral, Robin se convierte en un símbolo de esperanza juvenil para Gotham. Aunque comienza bajo la sombra del Caballero de la Noche, cada versión de Robin encuentra su propio camino y evolución, desde líder de los Jóvenes Titanes hasta convertirse en héroe independiente."
+            imagen="img/robin.webp">
+        </hero-card>
+        <hero-card
+            nombre="Wanda Maximoff"
+            alias="Bruja Escarlata"
+            casa="Marvel Comics"
+            aparicion="1964"
+            descripcion="Poderosa y enigmática, la Bruja Escarlata domina la magia del caos y la manipulación de la realidad. Marcada por el dolor y la pérdida, lucha por el equilibrio entre el poder y la redención."
+            descripcion-larga="Wanda Maximoff, conocida como la Bruja Escarlata, es una de las mutantes más poderosas del universo Marvel. Dotada de la capacidad de alterar la realidad y utilizar magia del caos, su historia está marcada por la tragedia, la pérdida de seres queridos y la lucha por controlar su inmenso poder. Miembro ocasional de los Vengadores, ha sido tanto heroína como amenaza cuando su dolor la ha llevado al límite. Su compleja dualidad la convierte en uno de los personajes más fascinantes del universo superheroico."
+            imagen="img/wanda.jpg">
+        </hero-card>
+        <hero-card
+            nombre="Stephen Strange"
+            alias="Doctor Strange"
+            casa="Marvel Comics"
+            aparicion="1963"
+            descripcion="El Hechicero Supremo, guardián de los secretos del universo. Con sabiduría, arte arcano y un pasado marcado por la transformación, Doctor Strange protege la realidad de amenazas más allá de lo imaginable."
+            descripcion-larga="Stephen Strange era un brillante pero arrogante neurocirujano cuya carrera se arruinó tras un accidente que dañó sus manos. En busca de sanación, descubrió las artes místicas y se convirtió en el Hechicero Supremo, protector del plano terrenal contra amenazas mágicas y dimensionales. Portador del Ojo de Agamotto y maestro de los hechizos más complejos, Strange recorre el multiverso manteniendo el equilibrio entre las fuerzas del caos y el orden. Su historia es una mezcla de ciencia, espiritualidad y sacrificio personal." 
+            imagen="img/doctor.jpg">
+        </hero-card>
+        <hero-card
+            nombre="Diana Prince"
+            alias="Mujer Maravilla"
+            casa="DC Comics"
+            aparicion="1942"
+            descripcion="Guerrera amazona y símbolo de la verdad, la Mujer Maravilla combina fuerza divina, compasión y honor. Defensora de la justicia, lucha por un mundo en paz con el poder de los dioses y el corazón de una heroína."
+            descripcion-larga="Diana de Themyscira, conocida como la Mujer Maravilla, es una princesa amazona hija de la reina Hipólita. Forjada en la isla de las Amazonas y bendecida por los dioses del Olimpo, combina habilidades sobrehumanas con un profundo sentido de compasión y justicia. Con su lazo de la verdad, brazaletes indestructibles y su espada divina, lucha no solo con fuerza, sino con sabiduría. Como embajadora de paz y guerrera imparable, Diana representa la unión entre el mundo mitológico y el humano."
+            imagen="img/maravilla.jpg">
+        </hero-card>
+        <hero-card
+            nombre="Hal Jordan"
+            alias="Linterna Verde"
+            casa="DC Comics"
+            aparicion="1940"
+            descripcion="Portador de uno de los anillos más poderosos del universo, Linterna Verde enfrenta el miedo con voluntad inquebrantable. Protector de los sectores cósmicos, su valor ilumina la oscuridad del espacio y la injusticia."
+            descripcion-larga="Linterna Verde es el título que ostentan los miembros del cuerpo intergaláctico conocido como los Green Lantern Corps. El más reconocido es Hal Jordan, un piloto de pruebas intrépido elegido por el anillo del poder debido a su valentía y fuerza de voluntad. El anillo le permite materializar cualquier cosa que imagine, convirtiéndolo en uno de los héroes más versátiles del universo. Como defensor del Sector 2814 (que incluye la Tierra), su deber lo lleva a enfrentar amenazas cósmicas mientras equilibra su humanidad con su responsabilidad universal."
+            imagen="img/verde.jpg">
+        </hero-card>
+        <hero-card
+            nombre="Clark Kent"
+            alias="Superman"
+            casa="DC Comics"
+            aparicion="1938"
+            descripcion="El Hombre de Acero, símbolo de esperanza y justicia, posee fuerza sobrehumana, visión más allá de lo visible y un corazón noble. Criado en la Tierra, protege a la humanidad guiado por sus valores inquebrantables."
+            descripcion-larga="Nacido como Kal-El en el planeta Krypton y enviado a la Tierra antes de su destrucción, fue criado por una familia de granjeros en Smallville bajo el nombre de Clark Kent. Con el sol amarillo de la Tierra, desarrolló habilidades sobrehumanas: fuerza, velocidad, visión de rayos X, vuelo y más. Como Superman, se convierte en el símbolo de la esperanza, justicia y verdad. Aunque posee un poder casi ilimitado, es su humanidad, compasión y firme sentido del bien lo que realmente lo definen como uno de los más grandes héroes de todos los tiempos."
+            imagen="img/super.webp">
+        </hero-card>
+    </div>
+    <hero-modal></hero-modal>
+</body>
+</html>
