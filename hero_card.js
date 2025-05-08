@@ -90,19 +90,22 @@ class HeroCard extends HTMLElement {
             padding: 20px;
             display: flex;
             gap: 20px;
-            max-width: 800px;
-            width: 90%;
-            max-height: 90%;
+            width: 1000px;
             overflow-y: auto;
           }
           .modal img {
             width: 300px;
-            height: auto;
             object-fit: cover;
             border-radius: 10px;
           }
           .modal-content h2 {
             margin-bottom: 10px;
+            text-align: center;
+            font-size: 60px;
+          }
+          .modal-content p {
+            text-align: center;
+            font-size: 20px;
           }
           .close-btn {
             position: absolute;
@@ -127,8 +130,8 @@ class HeroCard extends HTMLElement {
         </div>
   
         <div class="modal-overlay">
-          <div class="close-btn">&times;</div>
           <div class="modal">
+            <div class="close-btn">&times;</div>
             <img id="modal-img">
             <div class="modal-content">
               <h2 id="modal-alias"></h2>
