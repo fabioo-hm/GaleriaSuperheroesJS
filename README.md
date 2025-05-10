@@ -27,3 +27,7 @@ Ideal para aprender cómo usar tecnologías modernas como **Shadow DOM**, evento
 ✅ ¡100% sin librerías externas!
 
 ---
+
+## Proyecto en la Web
+
+https://galeriadesuperheroes.netlify.app/
