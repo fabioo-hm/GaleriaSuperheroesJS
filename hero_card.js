@@ -136,11 +136,20 @@ class HeroCard extends HTMLElement {
               max-height: 90%;
               padding: 15px;
             }
-
+            .close-btn {
+              position: absolute;
+              top: 10px; 
+              right: 5px;
+              font-size: 40px;
+              color: #000;
+              cursor: pointer;
+            }
             .modal img {
-              width: 300px;
-              height: 400px;
+
+              width: 260px;
+              height: 300px;
               margin-bottom: 0px;
+              margin-top: 20px;
             }
 
             .modal-content {
@@ -154,6 +163,10 @@ class HeroCard extends HTMLElement {
             .modal-content p {
               font-size: 16px;
               margin-bottom: 5px
+            }
+            .card {
+              width: 80%;
+              margin: 0 auto;
             }
           }
         </style>
