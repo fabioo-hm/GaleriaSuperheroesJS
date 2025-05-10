@@ -78,11 +78,22 @@ class HeroCard extends HTMLElement {
             position: fixed;
             top: 0; left: 0;
             width: 100%; height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
+            background-color: rgba(0, 0, 0, 0.8);
             display: none;
             justify-content: center;
             align-items: center;
             z-index: 9999;
+          }
+          .modal {
+            position: relative;
+          }
+          .close-btn {
+            position: absolute;
+            top: 10px; 
+            right: 25px;
+            font-size: 40px;
+            color: #000;
+            cursor: pointer;
           }
           .modal {
             background: white;
@@ -91,12 +102,20 @@ class HeroCard extends HTMLElement {
             display: flex;
             gap: 20px;
             width: 1000px;
+            height: 500px;
             overflow-y: auto;
           }
           .modal img {
-            width: 300px;
+            width: 700px;
+            height: 500px;
             object-fit: cover;
             border-radius: 10px;
+          }
+          .modal-content {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
           }
           .modal-content h2 {
             margin-bottom: 10px;
@@ -107,13 +126,35 @@ class HeroCard extends HTMLElement {
             text-align: center;
             font-size: 20px;
           }
-          .close-btn {
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            font-size: 30px;
-            color: white;
-            cursor: pointer;
+          @media (max-width: 768px) {
+            .modal {
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              width: 80%;
+              height: 81%;
+              max-height: 90%;
+              padding: 15px;
+            }
+
+            .modal img {
+              width: 300px;
+              height: 400px;
+              margin-bottom: 0px;
+            }
+
+            .modal-content {
+              text-align: center;
+            }
+
+            .modal-content h2 {
+              font-size: 36px;
+            }
+
+            .modal-content p {
+              font-size: 16px;
+              margin-bottom: 5px
+            }
           }
         </style>
   
@@ -131,9 +172,9 @@ class HeroCard extends HTMLElement {
   
         <div class="modal-overlay">
           <div class="modal">
-            <div class="close-btn">&times;</div>
             <img id="modal-img">
             <div class="modal-content">
+              <div class="close-btn">&times;</div>
               <h2 id="modal-alias"></h2>
               <p id="modal-desc"></p>
             </div>
